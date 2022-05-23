@@ -20,6 +20,7 @@ def PPTtoPDF(inputFileName, outputFileName, formatType = 32):
 
 def convert(path):
     pptxs = glob.glob(f"{path}\*.pptx")
+    print(pptxs)
 
     for pptx in pptxs:
         PPTtoPDF(inputFileName = pptx, outputFileName = pptx[:pptx.rfind('.')] + '.pdf')

@@ -1,8 +1,8 @@
 from scripts.combine_pdf import combine
 from scripts.pptx_to_pdf import convert
 from pathlib import Path
-
-p = Path('.')
+import os
+p = Path(os.getcwd())
 
 def main():
     convert(str(p / "in"))
